@@ -16,10 +16,7 @@ public class UserController {
 
     @GetMapping("/")
     public String index() {
-        return "Hello Uzbekistan" + "\n" +
-                "for more information about User List visit: https://spring-render-09ks.onrender.com/user" + "\n" +
-                "for add User visit: https://spring-render-09ks.onrender.com/addUser" + "\n" +
-                "for delete User visit: https://spring-render-09ks.onrender.com/deleteUser";
+        return "Hello Sarvar, this is Demo Project just for test";
     }
 
     @GetMapping("/user")
