@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
 public class UserController {
     static int userId = 1;
     static List<User> userList = new ArrayList<>(Arrays.asList(new User(userId++, "Jahongir", 23), new User(userId++, "Mirkamol", 18), new User(userId++, "Sarvar", 19)));
