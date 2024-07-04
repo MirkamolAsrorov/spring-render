@@ -24,8 +24,8 @@ public class UserController {
     }
 
     @GetMapping("/user")
-    public String hello() {
-        return userList.toString();
+    public ResponseEntity<?> getUsers() {
+        return ResponseEntity.ok(userList);
     }
 
     @PostMapping("/addUser")
